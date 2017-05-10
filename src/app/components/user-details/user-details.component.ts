@@ -28,7 +28,7 @@ export class UserDetailsComponent implements OnInit {
                 this.selectedUser = user;
             },
             (error) => {
-                this.eventsService.errorEvent.emit("Something went wrong. Can't load users.");
+                this.eventsService.errorEvent.emit("Can't load users.");
             });
     }
 

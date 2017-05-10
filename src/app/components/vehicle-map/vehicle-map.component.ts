@@ -70,7 +70,7 @@ export class VehicleMapComponent implements OnChanges {
                 this.selectedVehicleChange.emit(marker.vehicle);
             },
             (error) => {
-                this.eventsService.errorEvent.emit("Something went wrong. Can't load vehicle address.");
+                this.eventsService.errorEvent.emit("Can't load vehicle address.");
             });
     }
 
@@ -95,7 +95,7 @@ export class VehicleMapComponent implements OnChanges {
                 }
             },
             (error) => {
-                this.eventsService.errorEvent.emit("Something went wrong. Can't load vehicle locations.");
+                this.eventsService.errorEvent.emit("Can't load vehicle locations.");
             });
     }
 }

@@ -26,7 +26,7 @@ export class UsersComponent implements OnInit {
                 });
             },
             (error) => {
-                this.eventsService.errorEvent.emit("Something went wrong. Can't load users.");
+                this.eventsService.errorEvent.emit("Can't load users.");
             });
     }
 
