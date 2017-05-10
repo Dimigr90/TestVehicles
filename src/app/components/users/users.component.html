@@ -9,7 +9,7 @@
     </a>
 </md-list>
 
-<div *ngIf="selectedUser">
+<!--<div *ngIf="selectedUser">
     <md-list class="list">
         <h3 md-subheader>Vehicles of {{selectedUser.owner.name}} {{selectedUser.owner.surname}}</h3>
         <a md-list-item *ngFor="let vehicle of selectedUser.vehicles" (click)="onSelectVehicle(vehicle)" class="vehicle-link" [class.selectedItem]="selectedVehicle && selectedVehicle.vehicleid === vehicle.vehicleid">
@@ -20,7 +20,6 @@
             </p>
         </a>
     </md-list>
-
     <md-card *ngIf="selectedUser">
         <md-card-header>
             <md-card-title>Vehicle on the map</md-card-title>
@@ -29,4 +28,4 @@
             <vehicle-map [user]="selectedUser" [(selectedVehicle)]="selectedVehicle"></vehicle-map>
         </md-card-content>
     </md-card>
-</div>
+</div>-->

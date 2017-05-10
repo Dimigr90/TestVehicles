@@ -14,7 +14,7 @@ import { Observable } from 'rxjs';
     styleUrls: ['./vehicle-map.component.css']
 })
 export class VehicleMapComponent implements OnChanges {
-    zoom: number = 10;
+    zoom: number = 12;
     lat: number;
     lng: number;
     markers: VehicleMapMarker[];
@@ -78,7 +78,7 @@ export class VehicleMapComponent implements OnChanges {
         this.dataService.getVehicleLocations(user.userid).subscribe(
             data => {
                 var locations = data;
-                if (!_.isNil(locations) && !_.isNil(locations)) {
+                if (!_.isNil(locations)) {
                     this.markers = _.map(locations, (location) => {
                         var vehicle = _.find(user.vehicles, (v) => {
                             return v.vehicleid === location.vehicleid;
